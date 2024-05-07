@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Define que el documento es HTML5 -->
+<html lang="es">
+<!-- El documento está en español -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura la visualización adecuada y una escala inicial en dispositivos móviles -->
+    <title>Carrusel - Vertical</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Vincula el archivo de estilos CSS externo -->
+    <link rel="icon" href="img/slide_icon.png">
+    <!-- Establece un ícono para la pestaña del navegador -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconecta con Google Fonts para mejorar la carga de las fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Permite recursos de origen cruzado para Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Importa y aplica una fuente personalizada de Google Fonts -->
+</head>
+<body>
+    <div class="container">
+        <!-- Contenedor principal para el carrusel -->
+        <div id="slide-left" class="slide-left">
+            <!-- Contenedor para las imágenes del carrusel que se mueven verticalmente -->
+            <div class="slide"
+                style="background-image: url('img/bg_01.jpg'); background-size: cover; background-position: center center;">
+            </div>
+            <!-- Primera imagen del carrusel -->
+            <div class="slide"
+                style="background-image: url('img/bg_02.jpg'); background-size: cover; background-position: center center;">
+            </div>
+            <!-- Segunda imagen del carrusel -->
+            <div class="slide"
+                style="background-image: url('img/bg_03.jpg'); background-size: cover; background-position: center center;">
+            </div>
+            <!-- Tercera imagen del carrusel -->
+        </div>
+        <div id="slide-right" class="slide-right">
+            <!-- Contenedor para los textos del carrusel que se mueven en sentido opuesto -->
+            <div class="slide" style="background-color: #0084ff;">
+                <!-- Primera sección de texto con fondo azul -->
+                <h3 class="title">You Know, I Guess One Person Really Can Make A Difference.</h3>
+            </div>
+            <div class="slide" style="background: #000000;">
+                <!-- Segunda sección de texto con fondo negro -->
+                <h3 class="title">I Believe There’s A Hero In All Of Us.</h3>
+            </div>
+            <div class="slide" style="background-color: #ff0000;">
+                <!-- Tercera sección de texto con fondo rojo -->
+                <h3 class="title">Intelligence Is Not A Privilege, It's A Gift. And You Use It For The Good Of Mankind.</h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Vincula el archivo JavaScript que controla la lógica del carrusel -->
+</body>
+<!-- Esta etiqueta cierra el <body>, que es donde termina el contenido visible de la página. -->
+</html>
+<!-- Esta etiqueta cierra el documento HTML. -->

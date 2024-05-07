@@ -1,0 +1,59 @@
+/* Reset de márgenes y padding para todos los elementos, y define la fuente global */
+* {
+    margin: 0; /* Elimina todos los márgenes por defecto de los elementos */
+    padding: 0; /* Elimina todos los paddings por defecto de los elementos */
+    font-family: "Oswald", sans-serif; /* Establece la fuente Oswald para todos los elementos */
+    font-optical-sizing: auto; /* Permite que el navegador ajuste el tamaño óptico de la fuente automáticamente */
+    font-style: normal; /* Establece el estilo de la fuente a normal */
+}
+
+/* Estilo para el contenedor principal del carrusel */
+.container {
+    width: 100%; /* El contenedor ocupa el 100% del ancho de su contenedor padre */
+    height: 100vh; /* Altura del contenedor igual a la altura de la ventana del navegador */
+    display: flex; /* Utiliza Flexbox para la disposición de los elementos internos */
+    overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del contenedor */
+    background: brown; /* Color de fondo marrón para el contenedor */
+}
+
+/* Estilo para el contenedor que maneja las imágenes del carrusel */
+.slide-left {
+    width: 60%; /* Ancho del contenedor de imágenes al 60% del contenedor padre */
+    height: 100vh; /* Altura igual a la altura de la ventana del navegador */
+    background: orange; /* Fondo naranja para distinguir esta sección visualmente */
+    transition: 1s; /* Transición suave de 1 segundo para los cambios de estilo */
+}
+
+/* Estilo para el contenedor que maneja los textos del carrusel */
+.slide-right {
+    width: 40%; /* Ancho del contenedor de texto al 40% del contenedor padre */
+    height: 100vh; /* Altura igual a la altura de la ventana del navegador */
+    background: bisque; /* Fondo color bisque, suave y claro */
+    transition: 1s; /* Transición suave de 1 segundo para los cambios de estilo */
+}
+
+/* Estilo para cada elemento del carrusel, ya sea imagen o texto */
+.slide {
+    width: 100%; /* Cada slide ocupa el 100% del ancho de su contenedor */
+    height: 100vh; /* Altura de cada slide igual a la altura de la ventana del navegador */
+    display: flex; /* Utiliza Flexbox para centrar el contenido dentro del slide */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Estilo para los títulos dentro de los slides de texto */
+.slide > .title {
+    color: #fff; /* Color de texto blanco para alta legibilidad sobre fondos oscuros */
+    margin: 30px; /* Margen alrededor del título para evitar que toque los bordes */
+}
+
+/* Media queries para ajustar los estilos en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .slide-left, .slide-right {
+        width: 100%; /* En pantallas pequeñas, cada contenedor ocupa el 100% del ancho */
+        height: 50vh; /* Altura de cada contenedor reducida a la mitad de la ventana del navegador */
+    }
+    .slide > .title {
+        font-size: 3vh; /* Reduce el tamaño de fuente de los títulos para adaptarse a pantallas pequeñas */
+    }
+}
